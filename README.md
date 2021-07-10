@@ -4,9 +4,9 @@ DESCRIPTION:
 - This script runs get requests to the Entrez API to get
 a full list of human protein accession numbers from NCBI's protein database
 - Writes the accession numbers to a pickle file
-	-> pickled files are python data structures that can be written to files
-	-> this script writes a list
-	-> to load pickle file, execute the following python code:
+	- pickled files are python data structures that can be written to files
+	- this script writes a list
+	- to load pickle file, execute the following python code:
 
 		>>> mylist = []
 		>>> with open('protein_gis.pkl', 'rb') as pickle_file:
