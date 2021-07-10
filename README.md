@@ -6,13 +6,12 @@ a full list of human protein accession numbers from NCBI's protein database
 - Stores the accession numbers in a list and writes to a pickle file
 
 REQUIREMENTS:
-Python 3
-- Python Packages -
-requests, pickle, math, time, xml.etree.ElementTree, tqdm
+- Python 3
+  - packages: requests, pickle, math, time, xml.etree.ElementTree, tqdm
 
-- installing external packages -
-$ pip install requests
-$ pip install tqdm
+- installing external packages
+  - $ pip install requests
+  - $ pip install tqdm
 
 NOTES:
 - The Entrez API has a limit of 3 calls per second. With an API key, this is increased to 10 calls per second
