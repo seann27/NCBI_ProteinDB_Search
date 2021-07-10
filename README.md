@@ -7,7 +7,7 @@ a full list of human protein accession numbers from NCBI's protein database
 
 REQUIREMENTS:
 - Python 3
-  - packages: requests, pickle, math, time, xml.etree.ElementTree, tqdm
+- packages: requests, pickle, math, time, xml.etree.ElementTree, tqdm
 
 - installing external packages
   - $ pip install requests
