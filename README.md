@@ -13,6 +13,10 @@ REQUIREMENTS:
   - $ pip install requests
   - $ pip install tqdm
 
+USAGE:
+
+- $ python3 get_NCBI_human_proteins.py
+
 NOTES:
 - The Entrez API has a limit of 3 calls per second. With an API key, this is increased to 10 calls per second
 - The Entrez API returns responses in XML format, not in JSON
