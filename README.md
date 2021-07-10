@@ -8,9 +8,9 @@ a full list of human protein accession numbers from NCBI's protein database
 	- this script writes a list
 	- to load pickle file, execute the following python code:
 
-		>>> mylist = []
-		>>> with open('protein_gis.pkl', 'rb') as pickle_file:
-		>>>    mylist = pickle.load(pickle_file)
+	>>> mylist = []
+	>>> with open('protein_gis.pkl', 'rb') as pickle_file:
+	>>>    mylist = pickle.load(pickle_file)
 
 REQUIREMENTS:
 Python 3
