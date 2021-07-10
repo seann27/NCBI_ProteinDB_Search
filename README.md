@@ -3,27 +3,24 @@
 DESCRIPTION:
 - This script runs get requests to the Entrez API to get
 a full list of human protein accession numbers from NCBI's protein database
-- Writes the accession numbers to a pickle file
-	-> pickled files are python data structures that can be written to files
-	-> this script writes a list
-	-> to load pickle file, execute the following python code:
-
-		>>> mylist = []
-		>>> with open('protein_gis.pkl', 'rb') as pickle_file:
-		>>>    mylist = pickle.load(pickle_file)
+- Stores the accession numbers in a list and writes to a pickle file
 
 REQUIREMENTS:
-Python 3
-- Python Packages -
-requests, pickle, math, time, xml.etree.ElementTree, tqdm
+- Python 3
+- packages: requests, pickle, math, time, xml.etree.ElementTree, tqdm
 
-- installing external packages -
-$ pip install requests
-$ pip install tqdm
+- installing external packages
+  - $ pip install requests
+  - $ pip install tqdm
+
+USAGE:
+
+- $ python3 get_NCBI_human_proteins.py
 
 NOTES:
 - The Entrez API has a limit of 3 calls per second. With an API key, this is increased to 10 calls per second
 - The Entrez API returns responses in XML format, not in JSON
+
 
 LICENSING:
 Copyright 2021 Sean Black
