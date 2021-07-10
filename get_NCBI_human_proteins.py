@@ -54,7 +54,8 @@ def parse_ids(content):
 def main():
 	total_count = 0
 	# batch number is the number of results per page for the get request
-	batch_num = 10000
+	# larger batch numbers might result in bad responses
+	batch_num = 50000
 
 	# get total number of protein records
 	response = requests.get(baseurl)
@@ -76,6 +77,7 @@ def main():
 
 	# write the list to pickle file
 	with open('protein_gis.pkl', 'wb') as pickle_file:
+		print(f"{len(accession_nums)} entries found")
 		pickle.dump(accession_nums, pickle_file)
 
 if __name__ == '__main__':
